@@ -1,0 +1,109 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+/* Sticky Notes */
+.Note{
+  background-color: #fef68a;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.Note.new{
+  background-color: #67d7cc;
+}
+textarea{
+  border: none;
+  resize: none;
+  background-color: #67d7cc;
+}
+textarea:focus{
+  outline: none;
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.notes-list{
+  display: grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+}
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.save{
+  border-radius: 10px;
+  background-color: #e1e1e1;
+  border: none;
+  padding: 5px 10px 5px 10px;
+
+}
+.save:hover{
+  background-color: #ededed;
+  cursor:pointer
+}
+
+/* todoList content part */
+#heading-todolist{
+  font-family:'Palatino, URW Palladio L, serif';
+  text-align: center;
+  color: #282c34;
+  font-style: italic;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+#content-todolist{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-style: italic;
+}
